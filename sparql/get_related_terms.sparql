@@ -1,0 +1,17 @@
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX oboInOwl: <http://www.geneontology.org/formats/oboInOwl#>
+
+SELECT ?s ?rel ?rel_label ?rel_term  WHERE {
+       ?s a owl:Class .
+       ?s oboInOwl:hasOBONamespace ?namespace .
+
+       ?s rdfs:subClassOf [
+       	    a owl:Restriction ;
+	        owl:onProperty ?rel ;
+	        owl:someValuesFrom ?rel_term
+       ] .
+       ?rel_term oboInOwl:hasOBONamespace ?namespace2 .
+       ?rel rdfs:label ?rel_label .
+
+}

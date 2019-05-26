@@ -1,0 +1,107 @@
+{
+  "mappings": {
+    "cell": {
+      "properties": {
+        "uri" : {
+          "type": "string",
+          "fields" : {
+            "raw" : {
+              "type" : "string",
+              "index" : "not_analyzed"
+            }
+          }
+        },
+        "label": {
+          "type": "string",
+          "fields" : {
+            "raw" : {
+              "type" : "string",
+              "index" : "not_analyzed"
+            }
+          }
+        },
+        "synonyms": {
+          "type": "string",
+          "fields" : {
+            "raw" : {
+              "type" : "string",
+              "index" : "not_analyzed"
+            }
+          }
+        },
+        "description": {
+          "type": "string",
+          "fields" : {
+            "raw" : {
+              "type" : "string",
+              "index" : "not_analyzed"
+            }
+          }
+        },
+        "source": {
+          "type": "string",
+          "fields" : {
+            "raw" : {
+              "type" : "string",
+              "index" : "not_analyzed"
+            }
+          }
+        },
+        "is_a": {
+          "type": "string",
+          "fields" : {
+            "raw" : {
+              "type" : "string",
+              "index" : "not_analyzed"
+            }
+          }
+        },
+        "is_a_labels": {
+          "type": "string",
+          "fields" : {
+            "raw" : {
+              "type" : "string",
+              "index" : "not_analyzed"
+            }
+          }
+        },
+        "part_of": {
+          "type": "string",
+          "fields" : {
+            "raw" : {
+              "type" : "string",
+              "index" : "not_analyzed"
+            }
+          }
+        },
+        "part_of_labels": {
+          "type": "string",
+          "fields" : {
+            "raw" : {
+              "type" : "string",
+              "index" : "not_analyzed"
+            }
+          }
+        },
+        "capable_of_labels": {
+          "type": "string",
+          "fields" : {
+            "raw" : {
+              "type" : "string",
+              "index" : "not_analyzed"
+            }
+          }
+        },
+        "has_plasma_membrane_part_labels": {
+          "type": "string",
+          "fields" : {
+            "raw" : {
+              "type" : "string",
+              "index" : "not_analyzed"
+            }
+          }
+        }
+      }
+    }
+  }
+}

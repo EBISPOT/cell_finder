@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+
+  neo4j:
+    image: neo4j:3.5.5
+    ports:
+      - 7474:7474
+      - 7687:7687
+    environment:
+      - NEO4J_AUTH=none
+    volumes:
+      - ./target:/import
+
+#  elasticsearch:
+#    build: ./elastic
+#    ports:
+#    - "9200:9200"
+#    - "9300:9300"
+
+

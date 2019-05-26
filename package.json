@@ -1,0 +1,28 @@
+{
+  "name": "searchkit-starter",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "husky": "^1.3.1",
+    "lint-staged": "^8.1.5",
+    "nodemon": "^1.18.11",
+    "react-scripts": "^1.0.14"
+  },
+  "dependencies": {
+    "@elastic/elasticsearch": "^7.1.0",
+    "dotenv": "^8.0.0",
+    "neo4j-driver": "^1.7.4",
+    "react": "^15.6.2",
+    "react-dom": "^15.6.2",
+    "searchkit": "^2.3.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "dataimport": "./node_modules/.bin/babel-node src/DataImport.js"
+  }
+}
